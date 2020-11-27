@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--declares the document type
+                    : tells the browser to render this file
+                      as an HTML5 (the latest HTML version) document-->
+<html lang="en">
+  <head>
+    <!--has info about the webpage
+    : tells browser how it should display the page-->
+    <meta charset="UTF-8" />
+    <!--character set 
+        : the meta element gives extra metadata (associated data)
+         => Encode all the text inside the page using the UTF-8 
+         encoding system. 
+         UTF-8 is the standard encoding for HTML5 b/c it includes
+         all the international symbols + Emojis
+         included in the unicode char set. -->
+    <!--Mojibake occurs when browser tries to render characters
+        using the wrong character set-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Web Development Practice" />
+    <!--gives info to search engines about the content of website
+        : is what is displayed in the search index-->
+
+    <meta name="keywords" content="web development, HTML" />
+    <!--defines keywords for search engines-->
+
+    <meta name="author" content="Ally An" />
+    <!--defines the author of page-->
+
+    <title>Ally's Practice Site</title>
+  </head>
+  <body>
+    <!--Put <head> and <body> at the same hierarhcical level-->
+    <img
+      src="https://hosting.photobucket.com/images/i/nsprea_lgc/me.jpg?width=450&height=278&fit=bounds&crop=fill"
+      alt="Ally profile picture"
+    />
+    <!--the browser queries the photobucket 
+    server to get permission to download the image. 
+    Once permission is obtained it will display img on the webpage 
+    If the server goes down, the img will NO LONGER BE AVAILABLE.-->
+    <img src="..\images\circle-cropped.png" alt="Ally photo" width="200" />
+    <h1>Ally An</h1>
+    <!--Shift+Alt+F : to apply Indentation-->
+    <p>
+      <!--gets a NEW LINE and the text inside gets grouped 
+            together into the same PARAGRAPH-->
+      <em>
+        A person who loves
+        <strong>
+          <a href="https://en.wikipedia.org/wiki/Jesus">Christ Jesus</a>
+          <!--anchor tag : link destination-->
+        </strong>
+      </em>
+      <!--<em> emphasizes the contents, while <i> just styles it
+          Always use <em> as it conveys more info 
+            (HTML is more about STRUCTURE rather than looks)
+        In the same way, always use <strong> instead of <b> -->
+    </p>
+    <p>
+      I belong to Jesus Christ, my Saviour and the Lord. God loves me so much He
+      sent His only Son to earth who died for me and shed blood on the Cross so
+      that I may be forgiven and redeemed.
+    </p>
+    <hr align="left" width="70%">
+    <h3>Education</h3>
+    <ul>
+      <li>Trent University</li>
+      <ul>
+        <li>Bachelor of Arts Honours in Psychology</li>
+      </ul>
+    </ul>
+    <hr align="left" width="70%">
+    <a href="hobbies.html">My Hobbies</a>
+    <hr align="left" width="70%">
+    <a href="contact.html">Contact Me</a>
+  </body>
+</html>
